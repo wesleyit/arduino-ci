@@ -7,6 +7,7 @@ void loop() {
 
 }
 
+/*
 se escuro, liga a luz, se claro, apaga
 se temp normal, ok, senao, liga sirene
 
@@ -22,4 +23,4 @@ int disable_sound()
 
 int sound_status()
 int light_status()
-
+*/
