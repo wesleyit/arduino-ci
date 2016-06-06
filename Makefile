@@ -8,6 +8,7 @@ stylecheck:
 
 unittest:
 	@echo "Running the Unit test..."
+	gcc PrettyNiceCodeTest.c -lcmocka -o PrettyNiceCodeTest
 	mkdir -p reports
 
 devicetest:
