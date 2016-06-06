@@ -11,8 +11,8 @@ unittest:
 	gcc PrettyNiceCodeTest.c -lcmocka -o PrettyNiceCodeTest
 	rm -rf ./reports
 	mkdir -p reports
-	export CMOCKA_MESSAGE_OUTPUT=XML
-	export CMOCKA_XML_FILE=./reports/cmocka.xml
+	export CMOCKA_MESSAGE_OUTPUT = XML
+	export CMOCKA_XML_FILE = ./reports/cmocka.xml
 	./PrettyNiceCodeTest
 
 devicetest:
