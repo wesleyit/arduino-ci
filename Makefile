@@ -8,7 +8,7 @@ stylecheck:
 
 unittest:
 	@echo "Running the Unit test..."
-	rm ./reports/cmocka.xml
+	mkdir -p reports
 
 devicetest:
 	@echo "Running tests on the Arduino device..."
