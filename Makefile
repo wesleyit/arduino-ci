@@ -1,3 +1,5 @@
+include /usr/share/arduino/Arduino.mk
+
 lintcheck:
 	@echo "Running the lint check..."
 	@splint -fileextensions -unrecog -exportlocal PrettyNiceCode.ino
@@ -15,7 +17,3 @@ unittest:
 
 devicetest:
 	@echo "Running tests on the Arduino device..."
-
-install:
-	@echo "Building and installing the app..."
-
