@@ -1,6 +1,6 @@
 lintcheck:
 	@echo "Running the lint check..."
-	@splint -fileextensions PrettyNiceCode.ino
+	@splint -fileextensions -unrecog -exportlocal PrettyNiceCode.ino
 
 stylecheck:
 	@echo "Running the Google's Style check..."

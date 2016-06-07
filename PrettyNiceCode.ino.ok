@@ -1,0 +1,29 @@
+// Copyright 2016 - Wesley Silva
+const int light = A0;
+const int buz = 13;
+int lightRead = 0;
+
+void beep(int secs) {
+  Serial.print("\nBeep!");
+  digitalWrite(buz, HIGH);
+  delay(secs * 1000);
+  digitalWrite(buz, LOW);
+}
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  lightRead = analogRead(light);
+
+  if (lightRead < 100) {
+    beep(2);
+  }
+
+  Serial.print("\nLight level: ");
+  Serial.print(lightRead);
+
+  delay(500);
+}
+
